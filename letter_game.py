@@ -32,7 +32,7 @@ while True:
             if letter in good_guesses:
                 print(letter, end='')
             else:
-                print('', end='')
+                print('_', end='')
 
         print('')
         print('strikes: {}/7'.format(len(bad_guesses)))
@@ -61,6 +61,6 @@ while True:
         else:
             bad_guesses.append(guess)
     else:
-        print("You didn't guess it! My secret word was{}".format(secret_word))
+        print("You didn't guess it! My secret word was {}".format(secret_word))
 
 # print out win/loose
